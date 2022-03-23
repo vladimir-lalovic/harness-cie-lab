@@ -1,0 +1,23 @@
+connector:
+  name: github-vladimir-lalovic
+  identifier: githubvladimirlalovic
+  description:
+  orgIdentifier: default
+  projectIdentifier: bootcampcivladimir
+  type: Github
+  spec:
+    url: https://github.com/vladimir-lalovic
+    validationRepo: harness-cie-lab
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: vladimir-lalovic
+          tokenRef: bootcampci
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: bootcampci
+    executeOnDelegate: true
+    type: Account
