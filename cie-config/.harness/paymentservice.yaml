@@ -49,7 +49,7 @@ pipeline:
                                 identifier: Build
                                 spec:
                                     connectorRef: account.bootcampdockerhub
-                                    image: bootcamp-dockerhub
+                                    image: nikpap/mvn-openjdk-8:harness
                                     command: |-
                                         cd payment-service
                                         mvn -Dmaven.test.skip=true clean install -X
