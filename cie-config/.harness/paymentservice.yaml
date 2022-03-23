@@ -38,7 +38,6 @@ pipeline:
                                     packages: com.nikp
                                     runOnlySelectedTests: true
                                     preCommand: cd payment-service
-                                    postCommand: "**/*.xml"
                                     resources:
                                         limits:
                                             memory: 2Gi
